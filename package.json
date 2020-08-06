@@ -1,0 +1,13 @@
+{
+  "name": "axios-chrome-messaging-adapter2",
+  "version": "1.0.0",
+  "main": "lib",
+  "scripts": {
+    "prepublishOnly": "tsc"
+  },
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/chrome": "0.0.114",
+    "axios": "^0.19.2"
+  }
+}
