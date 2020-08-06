@@ -1,22 +1,18 @@
+For CORS request in chrome extensions,support chrome edge firefox.
+
 ### Quick start
-
-If you are using a bundler, like webpack or rollup:, you'll just need to **`require`** the lib. If you are using a CDN, the lib will be available under **`window.axiosChromeMessagingAdapter`**.
-
 In your **background** script:
 
 ```javascript
-import axios from 'axios';
-import { registerMessageHandler } from 'axios-chrome-messaging-adapter';
-
 // register the adapter message hanlder
-registerMessageHandler();
+import 'axios-chrome-messaging-adapter2';
 ```
 
 In your **content** script:
 
 ```javascript
 import axios from 'axios'
-import { adapter } from 'axios-chrome-messaging-adapter'
+import { adapter } from 'axios-chrome-messaging-adapter2'
 
 // tell axios to use the adapter for this request
 const axiosInstance = axios.create({
